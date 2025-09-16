@@ -1,126 +1,299 @@
-body{
-  display: block;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-h1{
-  margin: 0;
-  padding-top: 100px;
-  color: white;
-  font-size: 70px;
-  font-family: 'dm serif display', serif;
-}
-
-h2{
-  font-family: 'dm serif display', serif;
-}
-
-h3{
-  font-family: 'poppins', sans-serif;
-  font-size: 20px;
-  text-decoration: underline;
-}
-
-p{
-  font-family: 'poppins', sans-serif;
-  font-size: 21px;
-}
-
-ul{
-  font-size: 20px;
-  font-family: 'poppins', sans-serif;
-}
-
-.subtitle{
-  color: white;
-}
-
-.title-container{
-  position: relative;
-  background-color: #637d94 ;
-  text-align: center;
-}
-
-.meditation{
-  margin-top: 135px;
-}
-
-.about-section{
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.about-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-text{
-  width: 70%;
-  text-align: center;
-}
-
-.Tyler{
-  background-color: #cccbc9;
-  border-radius: 50%;
-}
-
-.sub{
-  font-size: 50px;
-  margin-top: 50px;
-}
-
-.Hobbies{
-  display: flex;
-  justify-content: center;
-}
-
-.img{
-  margin-bottom: 20px;
-  padding-right: 15px;
-}
-
-.hobbies-text{
-  width: 50%;
-  padding-left: 50px;
-  text-align: left;
-}
-
-.resume-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.button{
-  margin-bottom: 30px;
-}
-
-.Cap{
-  position: relative;
-  top: 50px;
-}
-
-.resume-section{
-  margin-bottom: 50px;
-}
-
-.contact-me{
-  text-align: center;
-}
-
-.contact-text{
-  font-size: 20px;
-  width: 70%;
-  padding-left: 200px;
-}
-
-.footer-container{
-  background-color: #637d94;
-  padding: 50px 0 20px;
-  text-align: center;
-}
+diff --git a/styles.css b/styles.css
+index b445f5e276c79ee98f3b7ec619837b4c4fc76b5a..25e7b1d5455989ec24cb6fe1863403fdd387a3b4 100644
+--- a/styles.css
++++ b/styles.css
+@@ -1,126 +1,229 @@
+-body{
+-  display: block;
+-  width: 100%;
+-  height: 100vh;
++body {
+   margin: 0;
+-  padding: 0;
++  font-family: "Poppins", sans-serif;
++  line-height: 1.6;
++  color: #1f2933;
++  background-color: #ffffff;
+ }
+ 
+-h1{
+-  margin: 0;
+-  padding-top: 100px;
+-  color: white;
+-  font-size: 70px;
+-  font-family: 'dm serif display', serif;
++img {
++  max-width: 100%;
++  height: auto;
++  display: block;
++}
++
++h1,
++h2,
++h3 {
++  font-family: "DM Serif Display", serif;
++  font-weight: 400;
++  margin: 0 0 16px;
++}
++
++h1 {
++  color: #ffffff;
++  font-size: clamp(2.75rem, 6vw, 4.25rem);
++}
++
++h2 {
++  font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+ }
+ 
+-h2{
+-  font-family: 'dm serif display', serif;
++.subtitle {
++  color: #ffffff;
++  font-size: clamp(1.5rem, 4.5vw, 2.5rem);
+ }
+ 
+-h3{
+-  font-family: 'poppins', sans-serif;
+-  font-size: 20px;
++h3 {
++  font-size: clamp(1.25rem, 3vw, 1.5rem);
+   text-decoration: underline;
+ }
+ 
+-p{
+-  font-family: 'poppins', sans-serif;
+-  font-size: 21px;
++p {
++  margin: 0 0 16px;
++  font-size: clamp(1rem, 2.8vw, 1.25rem);
+ }
+ 
+-ul{
+-  font-size: 20px;
+-  font-family: 'poppins', sans-serif;
++ul {
++  margin: 0;
++  padding-left: 20px;
++  font-size: clamp(1rem, 2.6vw, 1.1875rem);
+ }
+ 
+-.subtitle{
+-  color: white;
++section {
++  padding: 60px 20px;
+ }
+ 
+-.title-container{
+-  position: relative;
+-  background-color: #637d94 ;
++.title-section {
++  background-color: #637d94;
++  color: #ffffff;
++}
++
++.title-container {
++  max-width: 1100px;
++  margin: 0 auto;
++  display: flex;
++  flex-direction: column;
++  align-items: center;
++  gap: 32px;
+   text-align: center;
+ }
+ 
+-.meditation{
+-  margin-top: 135px;
++.title-text {
++  max-width: 560px;
+ }
+ 
+-.about-section{
+-  margin-top: 100px;
+-  margin-bottom: 100px;
++.meditation {
++  width: min(320px, 70%);
+ }
+ 
+-.about-container{
++.about-section {
++  margin: 0;
++}
++
++.about-container {
++  max-width: 960px;
++  margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
++  gap: 20px;
++  text-align: center;
+ }
+ 
+-.about-text{
+-  width: 70%;
+-  text-align: center;
++.about-text {
++  max-width: 720px;
+ }
+ 
+-.Tyler{
++.Tyler {
++  width: 180px;
+   background-color: #cccbc9;
+   border-radius: 50%;
+ }
+ 
+-.sub{
+-  font-size: 50px;
+-  margin-top: 50px;
++.sub {
++  font-size: clamp(2rem, 5vw, 3rem);
++  margin-top: 20px;
+ }
+ 
+-.Hobbies{
++.Hobbies {
+   display: flex;
+-  justify-content: center;
++  align-items: center;
++  gap: 24px;
++  max-width: 780px;
++  margin: 20px auto 0;
++  text-align: left;
+ }
+ 
+-.img{
+-  margin-bottom: 20px;
+-  padding-right: 15px;
++.img {
++  width: 120px;
+ }
+ 
+-.hobbies-text{
+-  width: 50%;
+-  padding-left: 50px;
+-  text-align: left;
++.hobbies-text {
++  margin: 0;
++}
++
++.resume-section {
++  background-color: #f5f7fa;
+ }
+ 
+-.resume-container{
++.resume-container {
++  max-width: 960px;
++  margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
++  gap: 16px;
++  text-align: center;
+ }
+ 
+-.button{
+-  margin-bottom: 30px;
++.Cap {
++  width: 120px;
+ }
+ 
+-.Cap{
+-  position: relative;
+-  top: 50px;
++.button {
++  padding: 12px 32px;
++  font-family: "Poppins", sans-serif;
++  font-size: 1rem;
++  border: none;
++  border-radius: 9999px;
++  background-color: #637d94;
++  color: #ffffff;
++  cursor: pointer;
++  transition: background-color 0.3s ease;
+ }
+ 
+-.resume-section{
+-  margin-bottom: 50px;
++.button:hover,
++.button:focus {
++  background-color: #4f6377;
+ }
+ 
+-.contact-me{
++.contact-me {
+   text-align: center;
+ }
+ 
+-.contact-text{
+-  font-size: 20px;
+-  width: 70%;
+-  padding-left: 200px;
++.contact-text {
++  max-width: 720px;
++  margin: 0 auto;
+ }
+ 
+-.footer-container{
++.footer-container {
+   background-color: #637d94;
+-  padding: 50px 0 20px;
++  color: #ffffff;
++  padding: 30px 20px;
+   text-align: center;
+-}
++}
++
++.footer-link {
++  color: #ffffff;
++  font-weight: 600;
++  text-decoration: none;
++}
++
++.footer-link:hover,
++.footer-link:focus {
++  text-decoration: underline;
++}
++
++@media (min-width: 768px) {
++  .title-container {
++    flex-direction: row;
++    justify-content: space-between;
++    text-align: left;
++  }
++
++  .title-text {
++    text-align: left;
++  }
++
++  .meditation {
++    width: 320px;
++  }
++
++  .Hobbies {
++    gap: 32px;
++  }
++
++  .img {
++    width: 160px;
++  }
++}
++
++@media (max-width: 600px) {
++  section {
++    padding: 48px 16px;
++  }
++
++  .Hobbies {
++    flex-direction: column;
++    text-align: center;
++  }
++
++  .hobbies-text {
++    text-align: center;
++  }
++
++  .img {
++    width: 140px;
++  }
++}
